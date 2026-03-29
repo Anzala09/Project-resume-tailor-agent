@@ -43,13 +43,13 @@ resume-tailor-agent/
 
 ```bash
 git clone <repo-url>
-cd resume-tailor-agent
+cd Project-resume-tailor-agent
 ```
 
 ### 2. Create a virtual environment
 
 ```bash
-python3 -m venv venv
+python -m venv venv
 source venv/bin/activate      # macOS/Linux
 # venv\Scripts\activate       # Windows
 ```
