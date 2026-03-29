@@ -49,7 +49,8 @@ cd Project-resume-tailor-agent
 ### 2. Create a virtual environment
 
 ```bash
-python -m venv venv or python3 -m venv venv
+python -m venv venv or
+# python3 -m venv venv
 source venv/bin/activate      # macOS/Linux
 # venv\Scripts\activate       # Windows
 ```
