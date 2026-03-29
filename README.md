@@ -2,7 +2,7 @@
 
 An autonomous Python agent that reads 5 job postings, tailors a candidate's resume for each role using Claude (Anthropic), saves the output as Word documents, and emails each one individually via Gmail.
 
-**Demo Video:** [link goes here]
+**Demo Video:** (https://screenrec.com/share/A8goBqt53w)
 
 ---
 
