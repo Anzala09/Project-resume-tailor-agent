@@ -61,15 +61,21 @@ source venv/bin/activate      # macOS/Linux
 pip install -r requirements.txt
 ```
 
+Run this to install groq:
+  ```bash                                                                                                            
+pip install groq
+```
 ### 4. Configure credentials
 
 ```bash
 cp .env.example .env
 ```
-**Then open and edit it:**                                                                                      
-                                                            
+**Then open and edit it:** 
+
+ ```bash                                                           
 open -e .env
-  
+ ```
+
 Edit `.env` and fill in:
 
 | Variable | Where to get it |
