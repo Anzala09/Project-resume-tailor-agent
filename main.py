@@ -27,31 +27,67 @@ INPUT_DIR = BASE_DIR / "input"
 OUTPUT_DIR = BASE_DIR / "output"
 
 
-def _detect_llm_provider() -> tuple[str, str]:
-    """
-    Auto-detect which LLM provider to use based on available API keys.
+# def _detect_llm_provider() -> tuple[str, str]:
+#     """
+#     Auto-detect which LLM provider to use based on available API keys.
 
-    Returns:
-        (provider_name, api_key) — e.g. ("gemini", "AIza...")
+#     Returns:
+#         (provider_name, api_key) — e.g. ("gemini", "AIza...")
 
-    Raises:
-        SystemExit if no valid key is found.
-    """
-    gemini_key = os.getenv("GEMINI_API_KEY")
-    anthropic_key = os.getenv("ANTHROPIC_API_KEY")
+#     Raises:
+#         SystemExit if no valid key is found.
+#     """
+    # gemini_key = os.getenv("GEMINI_API_KEY")
+    # anthropic_key = os.getenv("ANTHROPIC_API_KEY")
 
-    if gemini_key:
-        return "gemini", gemini_key
-    if anthropic_key:
-        return "anthropic", anthropic_key
+    # if gemini_key:
+    #     return "gemini", gemini_key
+    # if anthropic_key:
+    #     return "anthropic", anthropic_key
 
-    print("Error: No LLM API key found.")
-    print()
-    print("Set one of the following in your .env file:")
-    print("  GEMINI_API_KEY     — FREE. Get it at https://aistudio.google.com/app/apikey")
-    print("  ANTHROPIC_API_KEY  — Paid. Get it at https://console.anthropic.com/")
-    raise SystemExit(1)
+    # print("Error: No LLM API key found.")
+    # print()
+    # print("Set one of the following in your .env file:")
+    # print("  GEMINI_API_KEY     — FREE. Get it at https://aistudio.google.com/app/apikey")
+    # print("  ANTHROPIC_API_KEY  — Paid. Get it at https://console.anthropic.com/")
+#     groq_key = os.getenv("GROQ_API_KEY")                                                                        
+#   gemini_key = os.getenv("GEMINI_API_KEY")                  
+#   anthropic_key = os.getenv("ANTHROPIC_API_KEY")                                                              
+                                                            
+#   if groq_key:
+#       return "groq", groq_key                                                                                 
+#   if gemini_key:
+#       return "gemini", gemini_key                                                                             
+#   if anthropic_key:                                         
+#       return "anthropic", anthropic_key   
 
+#   print("Error: No LLM API key found.")                                                                       
+#   print()
+#   print("Set one of the following in your .env file:")                                                        
+#   print("  GROQ_API_KEY       — FREE. Get it at https://console.groq.com (no credit card)")
+#   print("  GEMINI_API_KEY     — FREE. Get it at https://aistudio.google.com/app/apikey")
+#   print("  ANTHROPIC_API_KEY  — Paid. Get it at https://console.anthropic.com/")
+    # raise SystemExit(1)
+
+def _detect_llm_provider() -> tuple[str, str]:                                                              
+      groq_key = os.getenv("GROQ_API_KEY")                                                                    
+      gemini_key = os.getenv("GEMINI_API_KEY")                                                                
+      anthropic_key = os.getenv("ANTHROPIC_API_KEY")
+                                                                                                              
+      if groq_key:                                                                                            
+          return "groq", groq_key                                                                             
+      if gemini_key:                                                                                          
+          return "gemini", gemini_key                                                                         
+      if anthropic_key:
+          return "anthropic", anthropic_key                                                                   
+                                                            
+      print("Error: No LLM API key found.")   
+      print()                             
+      print("Set one of the following in your .env file:")
+      print("  GROQ_API_KEY       — FREE. Get it at https://console.groq.com (no credit card)")               
+      print("  GEMINI_API_KEY     — FREE. Get it at https://aistudio.google.com/app/apikey")
+      print("  ANTHROPIC_API_KEY  — Paid. Get it at https://console.anthropic.com/")                          
+      raise SystemExit(1)
 
 def main():
     parser = argparse.ArgumentParser(description="AI Resume Tailoring Agent")
