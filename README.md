@@ -66,12 +66,15 @@ pip install -r requirements.txt
 ```bash
 cp .env.example .env
 ```
-
+**Then open and edit it:**                                                                                      
+                                                            
+open -e .env
+  
 Edit `.env` and fill in:
 
 | Variable | Where to get it |
 |----------|----------------|
-| `ANTHROPIC_API_KEY` | [console.anthropic.com](https://console.anthropic.com/) |
+| `GROQ_API_KEY` | (https://console.groq.com/keys) |
 | `GMAIL_USER` | Your Gmail address |
 | `GMAIL_APP_PASSWORD` | [myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) (requires 2FA) |
 | `EMAIL_RECIPIENT` | Where to send the resumes (can be yourself for testing) |
