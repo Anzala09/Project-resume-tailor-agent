@@ -1,0 +1,122 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Backend Software Engineer",
+      "company": "Nexus Systems",
+      "url": "https://careers.nexussystems.io/jobs/backend-engineer-001",
+      "description": "We are looking for a Backend Software Engineer to design, build, and maintain scalable server-side systems that power Nexus Systems' core platform. You will work closely with product and infrastructure teams to ship reliable APIs and services that serve millions of requests per day. Our backend stack is Python-first with Go used for performance-critical services, running on AWS with PostgreSQL and Redis as primary data stores.",
+      "requirements": [
+        "3+ years of experience building production backend systems",
+        "Strong proficiency in Python (FastAPI, Django, or Flask) or Go",
+        "Deep understanding of RESTful API design and HTTP semantics",
+        "Experience with relational databases (PostgreSQL preferred) and query optimization",
+        "Familiarity with message queues and async processing (Kafka, Celery, or RabbitMQ)",
+        "Experience with Docker and containerized deployments",
+        "Solid understanding of distributed systems, caching strategies, and rate limiting",
+        "Experience writing unit and integration tests with high coverage"
+      ],
+      "nice_to_have": [
+        "Experience with gRPC or GraphQL",
+        "Contributions to open-source backend libraries",
+        "Familiarity with AWS services (RDS, ElastiCache, SQS, Lambda)",
+        "Experience with Kubernetes and Helm charts",
+        "Background in API gateway design or microservices architecture"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Frontend Engineer",
+      "company": "Nexus Systems",
+      "url": "https://careers.nexussystems.io/jobs/frontend-engineer-002",
+      "description": "Nexus Systems is seeking a Frontend Engineer to craft exceptional user interfaces for our SaaS platform. You will own the end-to-end development of features from design handoff to production, collaborating with UX designers and backend engineers. We value accessibility, performance, and pixel-perfect execution. Our frontend is built with React and TypeScript, with a component library built on top of Tailwind CSS.",
+      "requirements": [
+        "3+ years of production experience with React and TypeScript",
+        "Strong command of modern CSS including Tailwind CSS or CSS Modules",
+        "Experience building responsive, accessible UIs (WCAG 2.1 compliance)",
+        "Proficiency consuming REST APIs and handling async state management (Redux, Zustand, or React Query)",
+        "Experience with component testing using Jest and React Testing Library",
+        "Understanding of browser performance optimization and Core Web Vitals",
+        "Familiarity with build tooling: Vite, Webpack, or Turbopack"
+      ],
+      "nice_to_have": [
+        "Experience with Next.js or server-side rendering",
+        "Knowledge of WebSockets or real-time UI patterns",
+        "Familiarity with Figma and design token workflows",
+        "Experience with Storybook for component documentation",
+        "GraphQL client experience (Apollo or urql)"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Machine Learning Engineer",
+      "company": "Nexus Systems",
+      "url": "https://careers.nexussystems.io/jobs/ml-engineer-003",
+      "description": "Join Nexus Systems' AI/ML team to build and deploy machine learning systems that directly improve product outcomes. You will own the full ML lifecycle — from data exploration and feature engineering to model training, evaluation, and production serving. We work on NLP, recommendation systems, and anomaly detection use cases. Our ML stack includes PyTorch, HuggingFace Transformers, and MLflow, with inference served via FastAPI endpoints on GPU instances.",
+      "requirements": [
+        "2+ years of hands-on ML engineering experience (not just research)",
+        "Proficiency in Python for data science and ML: pandas, NumPy, scikit-learn",
+        "Experience training and fine-tuning deep learning models with PyTorch or TensorFlow",
+        "Familiarity with HuggingFace Transformers and pre-trained language models",
+        "Experience building and maintaining data preprocessing pipelines at scale",
+        "Understanding of model evaluation metrics, cross-validation, and avoiding leakage",
+        "Experience deploying ML models to production (REST API, batch inference, or streaming)"
+      ],
+      "nice_to_have": [
+        "Experience with MLOps platforms: MLflow, Weights & Biases, or SageMaker",
+        "Familiarity with vector databases (Pinecone, Weaviate, or pgvector)",
+        "Experience with distributed training or large model inference optimization",
+        "Background in NLP tasks: classification, NER, summarization, or embeddings",
+        "Research publication or open-source ML contributions"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "DevOps / Platform Engineer",
+      "company": "Nexus Systems",
+      "url": "https://careers.nexussystems.io/jobs/devops-engineer-004",
+      "description": "Nexus Systems is hiring a DevOps / Platform Engineer to own the infrastructure and developer experience that keeps our platform running reliably at scale. You will manage our AWS infrastructure using Terraform, maintain our Kubernetes clusters, build CI/CD pipelines, and drive observability practices across engineering. We operate with an SRE mindset — you will be on-call, write runbooks, and champion reliability through automation and monitoring.",
+      "requirements": [
+        "3+ years in a DevOps, SRE, or Platform Engineering role",
+        "Deep expertise with Kubernetes (EKS or GKE): deployments, services, RBAC, HPA",
+        "Experience with infrastructure-as-code using Terraform",
+        "Strong AWS experience: EC2, EKS, RDS, S3, IAM, CloudWatch, VPC",
+        "Hands-on experience building and maintaining CI/CD pipelines (GitHub Actions, Jenkins, or Drone)",
+        "Observability experience: Prometheus, Grafana, Datadog, or similar",
+        "Experience with containerization: Docker, multi-stage builds, image optimization",
+        "Scripting proficiency in Bash or Python for automation"
+      ],
+      "nice_to_have": [
+        "Experience with service mesh technologies (Istio or Linkerd)",
+        "Familiarity with GitOps workflows (ArgoCD or Flux)",
+        "Experience with chaos engineering tools (Gremlin, Chaos Monkey)",
+        "AWS certifications (Solutions Architect, DevOps Engineer)",
+        "Background in security hardening and secrets management (Vault, AWS Secrets Manager)"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Full Stack Engineer",
+      "company": "Nexus Systems",
+      "url": "https://careers.nexussystems.io/jobs/fullstack-engineer-005",
+      "description": "Nexus Systems is looking for a Full Stack Engineer who thrives working across the entire product surface — from React frontends to Python/Node.js backends to database schema design. You will take end-to-end ownership of features, collaborating with product managers and designers to ship user-facing functionality quickly and reliably. This role suits engineers who are comfortable context-switching and care deeply about delivering complete, polished experiences.",
+      "requirements": [
+        "3+ years of full stack development experience in a production environment",
+        "Proficiency in React (with hooks and TypeScript) for frontend development",
+        "Backend experience with Python (FastAPI or Django) or Node.js (Express or NestJS)",
+        "Solid understanding of relational databases: schema design, indexing, and SQL (PostgreSQL)",
+        "Experience with REST API design and integration",
+        "Familiarity with Docker for local development and deployment",
+        "Ability to write tests across the stack: unit, integration, and end-to-end (Playwright or Cypress)",
+        "Experience with Git workflows, code review, and CI/CD pipelines"
+      ],
+      "nice_to_have": [
+        "Experience with real-time features using WebSockets or Server-Sent Events",
+        "Familiarity with cloud platforms (AWS or GCP) for deployment",
+        "Experience with monorepo tooling (Turborepo or Nx)",
+        "Background in authentication patterns: JWT, OAuth2, session management",
+        "Experience with Next.js for server-rendered React applications"
+      ]
+    }
+  ]
+}

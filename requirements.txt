@@ -1,0 +1,8 @@
+google-genai>=1.0.0
+openpyxl>=3.1.0
+python-docx>=1.1.0
+python-dotenv>=1.0.0
+docx2pdf>=0.1.8
+
+# Optional: only needed if using ANTHROPIC_API_KEY instead of GEMINI_API_KEY
+# anthropic>=0.40.0
