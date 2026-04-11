@@ -27,16 +27,16 @@ def _read_resume_text(docx_path: str) -> str:
 
 
 def run_pipeline(
-    xlsx_path: str,
-    json_path: str,
-    resume_docx_path: str,
-    output_dir: str,
-    llm_api_key: str,
-    llm_provider: str,
-    gmail_user: str,
-    gmail_app_password: str,
-    email_recipient: str,
-    dry_run: bool = False,
+    xlsx_path: str,    # path to option2_job_links.xlsx
+    json_path: str,     # path to option2_jobs.json
+    resume_docx_path: str,   # path to candidate_resume.docx
+    output_dir: str,         # folder to save tailored resumes
+    llm_api_key: str,         # your Groq/Gemini/Anthropic key
+    llm_provider: str,        # "groq" or "gemini" or "anthropic"
+    gmail_user: str,          # your gmail address
+    gmail_app_password: str,   # your gmail app password
+    email_recipient: str,      # who receives the emails
+    dry_run: bool = False,     # True = skip email, just generate files
 ) -> None:
     """
     Run the full pipeline: parse → tailor → generate → email.
