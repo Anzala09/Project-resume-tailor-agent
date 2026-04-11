@@ -9,14 +9,14 @@ For each job:
 Each job is wrapped in its own try/except — one failure never stops the rest.
 """
 
-from pathlib import Path
+from pathlib import Path         # handles file paths cleanly
+from docx import Document as DocxDocument     # reads .docx files
 
-from docx import Document as DocxDocument
+from src.parser import load_jobs   # your file_parser.py
+from src.tailor import tailor_resume  # your AI tailoring code
 
-from src.parser import load_jobs
-from src.tailor import tailor_resume
-from src.doc_generator import generate_document
-from src.emailer import send_resume_email
+from src.doc_generator import generate_document   # saves .docx
+from src.emailer import send_resume_email       # sends email
 
 
 def _read_resume_text(docx_path: str) -> str:
