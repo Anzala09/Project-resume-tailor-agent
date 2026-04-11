@@ -36,7 +36,7 @@ def run_pipeline(
     gmail_user: str,          # your gmail address
     gmail_app_password: str,   # your gmail app password
     email_recipient: str,      # who receives the emails
-    dry_run: bool = False,     # True = skip email, just generate files
+    dry_run: bool = False,   
 ) -> None:
     """
     Run the full pipeline: parse → tailor → generate → email.
