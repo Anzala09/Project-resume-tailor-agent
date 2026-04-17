@@ -131,7 +131,7 @@ All credentials are loaded via `python-dotenv` at startup. The agent validates a
 1. **`option2_jobs.json` format:** The assignment references this file but it was not provided. I created it with realistic, role-differentiated job descriptions for all 5 Nexus Systems roles, following the JSON schema shown in the assignment.
 2. **Recipient email:** All 5 emails go to `EMAIL_RECIPIENT`. In a real scenario this would be the hiring manager's address per job.
 3. **Candidate name stays the same:** The tailoring modifies emphasis, ordering, and language — but does not change the candidate's name, employer history, or factual details.
-4. **Single Claude model:** `claude-3-5-sonnet-20241022` is used for all 5 calls. A production system might use a cheaper model for drafts and a premium one for final output.
+4. **GROQ** `70 B Llama` is used for all 5 calls. A production system might use other models for drafts and a premium one for final output.
 
 ---
 
