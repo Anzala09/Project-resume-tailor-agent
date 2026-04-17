@@ -95,7 +95,7 @@ python main.py
 
 The agent will:
 1. Parse and join `option2_job_links.xlsx` + `option2_jobs.json`
-2. Tailor the resume for each of the 5 roles via Claude
+2. Tailor the resume for each of the 5 roles via GROQ.
 3. Save each tailored resume to `output/`
 4. Email each resume to `EMAIL_RECIPIENT`
 
